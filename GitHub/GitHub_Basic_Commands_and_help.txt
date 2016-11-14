@@ -1,0 +1,156 @@
+Tools recommended in GitHub trainings:
+* VIM (text editor)
+
+URLs:
+* https://www.youtube.com/watch?v=HVsySz-h9r4
+  ** Look for videos by Corey Schafer (his are good - start with "command line basics")
+* git-scm.com/downloads
+  ** to download Git Desktop
+* some help links and resources found while exploring initial setup:
+  ** https://guides.github.com/activities/hello-world/
+  ** https://help.github.com/articles/set-up-git/
+  ** https://help.github.com/categories/bootcamp/
+
+* some help links and resources found while looking into installation of Git Desktop:
+  ** https://git-scm.com/doc
+  ** Git Pro (book) available online for free:  https://git-scm.com/book/en/v2
+     *** note: has link to download PDF as well for offline copy
+
+Excerpt from above book on getting help on Git:
+
+Getting Help
+If you ever need help while using Git, there are three ways to get the manual page (manpage) 
+help for any of the Git commands:
+
+$ git help <verb>
+$ git <verb> --help
+$ man git-<verb>
+For example, you can get the manpage help for the config command by running
+
+$ git help config
+These commands are nice because you can access them anywhere, even offline. 
+If the manpages and this book aren’t enough and you need in-person help, 
+you can try the #git or #github channel on the Freenode IRC server (irc.freenode.net). 
+
+These channels are regularly filled with hundreds of people who are all very knowledgeable 
+about Git and are often willing to help.
+
+============================================================================
+After Installation of Git Desktop (command line interface):
+============================================================================
+git config --global user.name "username"
+git config --global user.email "email@email.com"
+git --version
+git
+ * all by itself lists all git commands
+=============================================================================
+Clone repository off GitHub Walkthrough
+=============================================================================
+git clone "https://github.com/ ...<project on Github>" .
+  * . is local folder (cd to it first or put in path where to clone to)
+
+git status
+  * find out what needs to be added / committed back to remote project
+
+git add <file-name>
+git add -A
+  * add all files in local project
+
+git commit -m "comment for commit"
+git push
+
+===================================================================================
+Git Project Update (work on cloned project from online repo
+===================================================================================
+git pull
+  * pull down all content to make sure project is up to date
+
+Other commands:
+git log
+  * shows all previous commit activities and shows if project is up to date at end of log
+  
+  
+==============================================================================================
+Git Set Up Local to use Remote Project without Cloning
+(Project exists but has nothing it in, now want to use what is on PC to build remote project)
+===============================================================================================
+git log
+git remote ad origin "https://github.com ... <project>"
+git push -u origin master
+git push
+  * subsequent updates after first one using "-u origin master"
+
+Later:
+git pull origin master
+
+================================================================================================
+Misc. Commands
+================================================================================================
+
+git init
+  * creates .git folder
+  * can delete or "rm - fr .git" (to remove the folder so folder is not trackd on git)
+
+touch .gitignore
+  * build ignore file (list files to ignore during updates in this file)
+
+git add -A
+  * adds all to staging area (not committed yet)
+
+git reset filename
+  * removes file from staging so it won't be committed
+
+git reset
+  * removes all files from staging so they won't be committed
+
+git diff
+  * shows differences in code file(s)
+  
+git remote -v
+  * shows files in remote repo
+
+git branch -a
+  * lists all branches (remote and local)
+
+git pull original master
+git push original master
+
+UNIX from demo?
+ls -la (lists files)
+
+================================================================================================
+Branching / Merging
+================================================================================================
+git branch
+  * lists branches
+
+git branch <branch name>
+  * provides info on branch of given name
+
+git checkout <branch name>
+  * check out branch to work on it
+
+git push -u origin <branch>
+git branch -a
+
+Merging:
+------------
+git checkout master
+git pull origin master
+git pull origin master
+git branch --merged
+  * tell us what has been merged so  far
+
+git push origin master
+git branch --merged
+  * check what was merged
+git branch -d <branch name>
+  * deletes branch (locally)
+git branch -a
+git push origin --delete <branch name>
+  * delete branch remotely
+
+==========================================  
+Points of interest to investigate:
+==========================================
+Git integrates with "Clear Case" and "Subversion" (mentioned in intro training videos)
