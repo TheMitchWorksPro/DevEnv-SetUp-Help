@@ -1,3 +1,6 @@
+Planned updates:  Step by Step working process
+ * commands in order as presented in training videos did not work 
+
 Tools recommended in GitHub trainings:
 * VIM (text editor)
 
@@ -75,7 +78,7 @@ Git Set Up Local to use Remote Project without Cloning
 (Project exists but has nothing it in, now want to use what is on PC to build remote project)
 ===============================================================================================
 git log
-git remote ad origin "https://github.com ... <project>"
+git remote add origin "https://github.com ... <project>"
 git push -u origin master
 git push
   * subsequent updates after first one using "-u origin master"
@@ -89,7 +92,7 @@ Misc. Commands
 
 git init
   * creates .git folder
-  * can delete or "rm - fr .git" (to remove the folder so folder is not trackd on git)
+  * can delete or "rm - r .git" (to remove the folder so folder is not trackd on git)
 
 touch .gitignore
   * build ignore file (list files to ignore during updates in this file)
