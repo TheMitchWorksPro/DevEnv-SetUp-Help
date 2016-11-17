@@ -45,6 +45,11 @@ $ git add someFolder\
 
 $ git add - A
 
+These commands commit your changes and finalize them on Git:
+
+$ git commit -m "brief description of what changed for the log"
+$ git push
+
 
 
 
