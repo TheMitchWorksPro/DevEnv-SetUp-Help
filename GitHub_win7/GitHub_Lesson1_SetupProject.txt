@@ -19,9 +19,32 @@ All you type is "git" to get a list of all git commands
 
 From Github Desktop, use these commands:
 $ cd "root folder for your git project"
-  - note:  on windows, choose a working location that is not too deep.  If paths get 260 characters long they may fail
-$ git clone <URL to clone from project you created on Github>
+  - note:  on windows, choose a working location that is not too deep.  
+           If paths get 260 characters long they may fail
+		   Depending on your installation, you may need to convert paths from "c:\mypath\folder" to "c:/mypath/folder"
 
-Your project should now be ready to use.
+$ git clone <URL to clone from project you created on Github>
+$ cd "projectName" 
+  - this will be last folder in URl you used to clone
+  - this will be the project folder locally after you clone it
+  - you can test with "dir" before changing directory
+  
+Your project should now be ready to use.  On bash, you should see "(master)" at end of the path you are in.
+Edit some files locally.
+
+$ git status
+  - should show you what was edited so you can enter commands to update on Git (online)
+
+Use this approach:
+- either individual commands like the ones shown for files that need updating
+- use -A switch to add all new content
+
+$ git add myFile.ext
+$ git add someFolder\myfile.ext
+$ git add someFolder\
+
+$ git add - A
+
+
 
 
