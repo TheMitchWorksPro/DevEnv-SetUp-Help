@@ -1,0 +1,27 @@
+Pre-requisites:
+-----------------------
+1) Donwload / Install Github Desktop
+2) Setup a new project on Github
+   - project should be created with README.MD with some basic idea of what you are creating documented in it
+   
+------------------------------------------------------------------------------------------------
+Setting up Project to work Locally (assumes building new project in empty local folder)
+------------------------------------------------------------------------------------------------
+Warning! - in this process you will clone the starter project from Github.
+Do not edit in both places (online and local) after cloning or problems will result.
+
+This walkthrough includes creation of project by cloning, editing adding files locally, sending back to Git,
+and finally, editing Readme.md on Git and synching that update to your local copy so work can continue later.
+
+In the content that follows, "$" represents the prompt, type commands after the "$" as in:
+$ git
+All you type is "git" to get a list of all git commands
+
+From Github Desktop, use these commands:
+$ cd "root folder for your git project"
+  - note:  on windows, choose a working location that is not too deep.  If paths get 260 characters long they may fail
+$ git clone <URL to clone from project you created on Github>
+
+Your project should now be ready to use.
+
+
