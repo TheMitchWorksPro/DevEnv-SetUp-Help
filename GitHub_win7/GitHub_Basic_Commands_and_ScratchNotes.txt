@@ -1,12 +1,18 @@
-Planned updates:  Step by Step working process
- * commands in order as presented in training videos did not work 
+This file has a list of all commands mentioned in the video URL provided below.
+It also has some related help content and references.
 
+Attempt to use the "init" command path below failed and work with these commands went
+in several directions before the new project was finally set up in a way that worked
+from command-line Git.  This content is preserved in case helpful, but look for
+"walkthrough" or "lesson" files for better step-by-step git command processes. 
+
+======================================================================================
 Tools recommended in GitHub trainings:
 * VIM (text editor)
 
 URLs:
 * https://www.youtube.com/watch?v=HVsySz-h9r4
-  ** Look for videos by Corey Schafer (his are good - start with "command line basics")
+  ** Video by Corey Schafer (has many, this one was: "command line basics")
 * git-scm.com/downloads
   ** to download Git Desktop
 * some help links and resources found while exploring initial setup:
@@ -153,6 +159,21 @@ git branch -a
 git push origin --delete <branch name>
   * delete branch remotely
 
+===============================================
+Modifying a Project - Deletes and Renames
+===============================================
+
+Deleting / renaming files:
+http://stackoverflow.com/questions/5551556/changing-file-names-in-git-repo
+
+Deleting and renaming files in GUI so they change folders in process
+https://github.com/blog/1436-moving-and-renaming-files-on-github
+
+Deleting / renaming folders:
+http://stackoverflow.com/questions/31861651/how-to-rename-a-directory-folder-in-githubweb
+  
+  
+  
 ==========================================  
 Points of interest to investigate:
 ==========================================
