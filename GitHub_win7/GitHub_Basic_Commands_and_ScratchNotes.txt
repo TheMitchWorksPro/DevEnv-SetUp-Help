@@ -157,3 +157,8 @@ git push origin --delete <branch name>
 Points of interest to investigate:
 ==========================================
 Git integrates with "Clear Case" and "Subversion" (mentioned in intro training videos)
+
+==============================================
+Interesting Projects on GitHub (other users)
+==============================================
+https://github.com/geekcomputers
