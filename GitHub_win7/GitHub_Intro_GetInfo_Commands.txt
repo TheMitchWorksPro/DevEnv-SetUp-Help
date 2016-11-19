@@ -1,0 +1,14 @@
+$ git config --list
+  - shows all configuration settings for this Git session
+  
+$ git remote -v
+  - lists remote repositories (associated to this working folder)
+
+$ git branch -a
+  - lists branches for our working folder project (all branches local and remote)
+
+$ git branch
+  - on a local unbranched project, this would return "master"
+  - might be just local branches, need to test for difference w/ git branch -a 
+  
+

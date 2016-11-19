@@ -6,15 +6,17 @@ in several directions before the new project was finally set up in a way that wo
 from command-line Git.  This content is preserved in case helpful, but look for
 "walkthrough" or "lesson" files for better step-by-step git command processes. 
 
-In the interim, this list of commands and some help content may be useful to your research.
-
 ======================================================================================
 Tools recommended in GitHub trainings:
 * VIM (text editor)
+* site:  initializr.com 
 
 URLs:
 * https://www.youtube.com/watch?v=HVsySz-h9r4
   ** Video by Corey Schafer (has many, this one was: "command line basics")
+* https://www.youtube.com/watch?v=ugN-IYV1NTM#t=981.252081
+  ** 90 minute more detailed video by Timothy Corey
+  
 * git-scm.com/downloads
   ** to download Git Desktop
 * some help links and resources found while exploring initial setup:

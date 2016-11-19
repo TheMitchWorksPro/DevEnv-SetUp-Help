@@ -1,0 +1,44 @@
+$ git branch "name-of-branch"
+  - creates a new branch
+  - example:  git branch devWork
+
+$ git checkout "name-of-branch" 
+  - switch to branch
+  - before checkout "git status" would show we are on master
+  - after checkout "git status" would show we are on the new branch
+  - example:  git checkout devWork
+
+$ git branch -d "name-of-branch"
+  - must switch to other branch (like master) first before deleting
+  - will give warnings like "this branch is not merged sure you want to do this?"
+  - to finalize this action:  git branch -D "name-of-branch"
+    - note:  only difference is D instead of d
+
+$ git checkout -b "name-of-branch" 
+  - this chckout can create the branch if it does not exist
+ 
+Assume we created dev branch:
+
+$ git branch -b dev
+$ git checkout dev
+
+Now we are in dev -- make changes here.  To merge back, first test what it will look like by:
+- merging any changes to Master since we split off into dev into dev
+- if results are good, then we merge dev into master
+- if master has not changed, first step will tell us that all is up-to-date
+
+$ git merge master
+ 
+Check results and switch to master to perform the merge there (it merges too current branch)
+
+$ git checkout master
+$ git merge dev
+
+Messages will tell us this process is a "fast-forward" - and changes will merge
+
+If we are done with dev branch, now we can use above commands to delete it:
+
+$ git branch -d dev
+$ git branch -D dev 
+
+
