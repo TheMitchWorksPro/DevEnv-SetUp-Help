@@ -25,7 +25,7 @@ $ cd "root folder for your git project"
 
 $ git clone <URL to clone from project you created on Github>
 $ cd "projectName" 
-  - this will be last folder in URl you used to clone
+  - this will be last folder in URL you used to clone
   - this will be the project folder locally after you clone it
   - you can test with "dir" before changing directory
   
@@ -48,7 +48,17 @@ $ git add - A
 These commands commit your changes and finalize them on Git:
 
 $ git commit -m "brief description of what changed for the log"
+  - suppose you do the commit, then make another edit or realize you want to add more files?
+  - after completing the changes and add them, you can use:  git commit --amend
 $ git push
+
+Updates involving removal of files - note that wildcard "*" must be escaped:
+
+$ git rm mydir/\*.log
+  - removes all .log fils in mydir 
+  - then commit and push just like an add command to finalize the changed
+ 
+ 
 
 
 
