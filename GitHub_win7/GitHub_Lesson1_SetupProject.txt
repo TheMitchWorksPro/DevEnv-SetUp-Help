@@ -44,7 +44,8 @@ $ git add someFolder\myfile.ext
 $ git add someFolder\
 
 $ git add - A
-
+  - this also works:  git add .
+  
 These commands commit your changes and finalize them on Git:
 
 $ git commit -m "brief description of what changed for the log"
@@ -57,7 +58,13 @@ Updates involving removal of files - note that wildcard "*" must be escaped:
 $ git rm mydir/\*.log
   - removes all .log fils in mydir 
   - then commit and push just like an add command to finalize the changed
- 
+
+Make a change back in the online project (Git remore repo at internet URL):
+- before you change anything locally need to pull and merge into the local project
+- simply use this command and it should solve the problem:
+
+$ git pull
+  - if no changes exist to pull - you will get an up-to-date message  
  
 
 
