@@ -45,6 +45,13 @@ $ git add someFolder\
 
 $ git add - A
   - this also works:  git add .
+  - to get it to skip some files:
+    - touch .gitignore
+	  - this creates above file
+	  - edit file with list of files to ignore
+	  - wild card patterns are allowed
+	  - then git status will no longer show changes to these files
+	  - and git add -A will ignore these files
   
 These commands commit your changes and finalize them on Git:
 
