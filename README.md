@@ -11,3 +11,4 @@ This is a work in progress first added to GitHub on:  11/13/2016.
 - [GitHub_win7](GitHub_win7): &nbsp;&nbsp;&nbsp;&nbsp;files from setup of a GitHub project w/ updates using GitHub Desktop to a Win7 laptop
   - scratch notes and useful command lists
   - problems encountered and what finally worked for getting a project setup and edited
+  - lessons that organize a set of commands that were used to achieve a git task
