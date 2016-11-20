@@ -1,3 +1,9 @@
+This lesson includes initializing an existing code project folder
+And more command basics that work for either cloned or initialized
+projects.  Note:  LINUX commands and bash syntax apply to both lessons.
+
+============================================================================
+
 $ ls -la
   - list files
 

@@ -66,6 +66,10 @@ $ git commit -m "brief description of what changed for the log"
 Combining the add and commit steps in one command:
 
 $ git commit -a -m "brief description of your changes"
+
+Made changes?  update / ammend the previous commit before pushing:
+
+$ git commit --amend
 	  
 $ git push
 
@@ -77,6 +81,8 @@ $ git rm mydir/\*.log
   
 $ git add --all
   - this is supposed to add all changes including multiple deletes (of files)
+  - in testing:  deleted a .docx and added a PDF - it made both changes
+  - in video:  instructor deleted all folders on a branch and this add picked up the entire whipe-out change
 
 Make a change back in the online project (Git remore repo at internet URL):
 - before you change anything locally need to pull and merge into the local project
