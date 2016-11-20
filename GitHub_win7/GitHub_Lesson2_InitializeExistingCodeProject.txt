@@ -9,18 +9,20 @@ $ git init my_project
   - will build the subfolder and initialize it
 
 $ git rm -rf .git
-  - removes .git folder and effectively stops tracking this code folder
+  - removes .git folder and effectively stops tracking this code folder (reverses git init)
 
 $ git status
   - check what is in project and at this stage is untracked
   - can use this command at any time for status of project before executing commands
 
 $ touch .gitignore
-  - touch creates a blank text files
-  - .gitignore is used to build list of files to ignore (edit manually to add files to ignore)
+  - touch creates a blank text file using name specified
+  - .gitignore is used to build a list of files to ignore (edit manually to add files to ignore)
+  - .gitignore can take wild card arguments like:  myPattern*.*
+  - if using paths to a file, use "/" as in:  myfolder/myfile.txt
   
 $ git remote add origin <url to remote project>
-  - add local project folder to remote repository
+  - add local project to remote repository (at URL provided)
   
 $ git remote
   - shows all remotes hooked up to this local project (will say "origin" right after previous command)
@@ -29,4 +31,4 @@ $ git push -u origin master
   - use -u switch first time only to get content pushed up to new remote repository
   - may be prompted for password to remote repository (or login popup may occur)
   
-$ 
+Then - should be able to use same add, commit, push commands as in lesson 1 once all is set up
