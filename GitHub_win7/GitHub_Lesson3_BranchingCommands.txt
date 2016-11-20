@@ -1,3 +1,6 @@
+Lessons in creating and working with branches
+===================================================
+
 $ git branch "name-of-branch"
   - creates a new branch
   - example:  git branch devWork
@@ -23,9 +26,9 @@ $ git branch -b dev
 $ git checkout dev
 
 Now we are in dev -- make changes here.  To merge back, first test what it will look like by:
-- merging any changes to Master since we split off into dev into dev
+- merging any changes to Master since we split off into dev
 - if results are good, then we merge dev into master
-- if master has not changed, first step will tell us that all is up-to-date
+- if master has not changed, first step will tell us that all is up-to-date:
 
 $ git merge master
  

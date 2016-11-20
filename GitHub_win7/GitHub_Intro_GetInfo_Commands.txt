@@ -11,4 +11,7 @@ $ git branch
   - on a local unbranched project, this would return "master"
   - might be just local branches, need to test for difference w/ git branch -a 
   
+$ git status
+  - get status of all adds / commits / changes (what's tracked / what's not tracked) on current branch
 
+  
