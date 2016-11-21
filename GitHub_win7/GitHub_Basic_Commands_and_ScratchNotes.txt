@@ -205,3 +205,6 @@ Help getting started with Bash scripting:
 Help constructing .gitignore files:
 * for templates:  https://www.gitignore.io/
 * for a good sample:  https://gist.github.com/octocat/9257657
+
+Git alias commands and command writing for bash:
+* https://lukas.zapletalovi.com/2012/07/my-git-aliases-again.html
