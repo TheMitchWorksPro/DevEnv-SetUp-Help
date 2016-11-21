@@ -1,0 +1,10 @@
+To be developed:
+* setting up Git to work with multiple user accounts/emails
+
+Source for this walkthrough:
+
+https://code.tutsplus.com/tutorials/quick-tip-how-to-work-with-github-and-multiple-accounts--net-22574
+* has instructions for setting up GIT for multiple accounts - personal and work
+* using SSH instead of HTTP for Push/Pull process
+
+Content to be developed in the future.
