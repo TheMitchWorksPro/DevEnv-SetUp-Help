@@ -1,8 +1,6 @@
 # DevEnv-SetUp-Help
 
-This project includes experiments and write-ups from attempts to set up developer environments and software.  The intent
-is that this content may be useful to others as they attempt to figure out how to set up their own environments and software,
-but it is not comprehensive and is presented as is.  Issues reported may or may not be addressed.  Requests to edit and make files better can be sent to UnderKlover@gmail.com.  Want to add edit files or improve this content?  Collaborations are welcome.
+This project contains scratch notes and hep content for setting up developer software and environments.  It is shared here as it may be useful to others as they attempt to figure out how to set up their own environments and software, but it is not comprehensive and is presented as is.  Testing of proceses is done with the equipment described with each folder only.  Issues reported may or may not be addressed.  Requests to edit and make files better can be sent to UnderKlover@gmail.com.  Want to add edit files or improve this content?  Collaborations are welcome.
 
 This is a work in progress first added to GitHub on:  11/13/2016.
 
@@ -12,3 +10,4 @@ This is a work in progress first added to GitHub on:  11/13/2016.
   - scratch notes and useful command lists
   - problems encountered and what finally worked for getting a project setup and edited
   - lessons that organize a set of commands that were used to achieve a git task
+
