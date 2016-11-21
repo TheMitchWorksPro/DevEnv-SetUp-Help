@@ -3,6 +3,8 @@ And more command basics that work for either cloned or initialized
 projects.  Note:  LINUX commands and bash syntax apply to both lessons.
 
 ============================================================================
+Commands Explained:
+============================================================================
 
 $ ls -la
   - list files
@@ -14,9 +16,12 @@ $ git init
 $ git init my_project
   - will build the subfolder and initialize it
 
-$ git rm -rf .git
+$ rm -rf .git
   - removes .git folder and effectively stops tracking this code folder (reverses git init)
-
+  - note:  this is a LINUX command, not a git command (called in bash as a LINUX tool)
+  - you will know it worked because after removal of the .git directory, the directory will stop listing with the (branch) 
+  - example:  before -- c:\myGitRepo (master)  after -- c:\myGitRepo 
+  
 $ git status
   - check what is in project and at this stage is untracked
   - can use this command at any time for status of project before executing commands
@@ -38,3 +43,33 @@ $ git push -u origin master
   - may be prompted for password to remote repository (or login popup may occur)
   
 Then - should be able to use same add, commit, push commands as in lesson 1 once all is set up
+
+=========================================================
+Step-by-Step Example - Initializing a Project
+=========================================================
+
+$ git init
+  - initializes project (in this case - folder with existing code to add to remote repo)
+  
+$ git status
+  - check status of project -- if uncommitted, then execute next command to commit all uncommitted content
+
+$ git commit -a -m "Initial Commit"
+  - if this fails, break it apart to these commands:
+  - git add .
+  - git commit -m "Initial Commit"
+
+$ git remote add origin https://github.com/TheMitchWorksPro/TestProject.git
+
+Note:  Before this step, the above repository must be created on GIT if it is not there already.
+* If your local project already has README.MD, .gitignore, or License files - do not create them in the project on GIT
+* syntax which follows is for first push only ...
+
+$ git push -u origin master
+
+Subsequent pushes can use:  $ git push
+
+
+
+  
+
