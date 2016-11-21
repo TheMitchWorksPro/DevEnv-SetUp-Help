@@ -1,10 +1,11 @@
 This file has a list of all commands mentioned in the video URL provided below.
 It also has some related help content and references.
 
-Attempt to use the "init" command path below failed and work with these commands went
-in several directions before the new project was finally set up in a way that worked
-from command-line Git.  This content is preserved in case helpful, but look for
-"walkthrough" or "lesson" files for better step-by-step git command processes. 
+About this File:
+* it is scratch notes from early attempts to learn Git
+* following some of the command chains (exactly as described in video links) failed
+* this content preserved almost like a "dump" of notes that might be useful for the future
+* other fils in this project are better organized and truly explain how to do things on Git
 
 ======================================================================================
 Tools recommended in GitHub trainings:
