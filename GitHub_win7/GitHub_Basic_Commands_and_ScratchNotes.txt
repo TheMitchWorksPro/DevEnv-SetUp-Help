@@ -201,3 +201,7 @@ https://code.tutsplus.com/tutorials/quick-tip-how-to-work-with-github-and-multip
 Help getting started with Bash scripting:
 * https://www.lifewire.com/pass-arguments-to-bash-script-2200571
 * run as:  ./filename.sh from bash prompt
+
+Help constructing .gitignore files:
+* for templates:  https://www.gitignore.io/
+* for a good sample:  https://gist.github.com/octocat/9257657

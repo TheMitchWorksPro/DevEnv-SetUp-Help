@@ -7,4 +7,7 @@ https://code.tutsplus.com/tutorials/quick-tip-how-to-work-with-github-and-multip
 * has instructions for setting up GIT for multiple accounts - personal and work
 * using SSH instead of HTTP for Push/Pull process
 
+https://help.github.com/articles/error-permission-denied-publickey/
+* useful help topic on permission error
+
 Content to be developed in the future.
