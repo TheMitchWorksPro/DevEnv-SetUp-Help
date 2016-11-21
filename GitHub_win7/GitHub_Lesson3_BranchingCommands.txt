@@ -1,4 +1,9 @@
 Lessons in creating and working with branches
+
+* This topic is documented from wathing online videos and is untested
+* Process written up on assumption user is still working individually
+* It does not include help for complexities that will arise when you share your project in collaboration with others
+
 ===================================================
 
 $ git branch "name-of-branch"

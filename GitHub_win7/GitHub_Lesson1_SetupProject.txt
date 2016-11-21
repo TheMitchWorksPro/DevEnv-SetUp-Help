@@ -1,8 +1,14 @@
 Pre-requisites:
 -----------------------
-1) Donwload / Install Github Desktop
+
+1) Download / Install Github Desktop
 2) Setup a new project on Github
    - project should be created with README.MD with some basic idea of what you are creating documented in it
+
+About this help topic:  
+------------------------------
+* This write-up assumes you want to use cloning to set up a project to work on your local machine
+* It does not include help for complexities that will arise when you share your project in collaboration with others
    
 ------------------------------------------------------------------------------------------------
 Setting up Project to work Locally (assumes building new project in empty local folder)

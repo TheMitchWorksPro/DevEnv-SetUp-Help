@@ -1,6 +1,11 @@
+About this help topic:  
+------------------------------
 This lesson includes initializing an existing code project folder
 And more command basics that work for either cloned or initialized
 projects.  Note:  LINUX commands and bash syntax apply to both lessons.
+
+* This write-up assumes you want to use this process to setup and update your local projects against an online repo
+* It does not include help for complexities that will arise when you share your project in collaboration with others
 
 ============================================================================
 Commands Explained:
@@ -69,6 +74,19 @@ $ git push -u origin master
 
 Subsequent pushes can use:  $ git push
 
+===========================================================================================
+Re-Initializing a Project to kill its tracking history
+* use case:  tracking takes space on hard drive
+* this process should allow a reset as if project were new
+* once done, all previous commit history is lost and only current and go-forward remains
+===========================================================================================
+
+Idea to be tested:
+1) kill .git folder using:  rm -rf .git
+2) Perform any final changes that will become the new live content
+3) Delete project on GIT
+4) re-create project (do not create Readme.md, or other starter fils project already has)
+5) follow initialization steps and commit the local project back to new online repo as intial commit
 
 
   
