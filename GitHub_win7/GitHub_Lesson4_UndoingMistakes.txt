@@ -25,6 +25,12 @@ $ git commit --ammend
   - just adds new changes to last commit
   - can only affect last commit (most recent one) before we push
 
-$ tbd ...
+Example of editing previously committed content:  
+$ git checkout 6afab5e706a5327ca41336da1946759677eedb9f -- GitHub_Lesson4_UndoingMistakes.txt
+  - this would checkout above mentioned file for editing from commit identified by hash ID
+  - it should effectively revert file to this earlier version so we can edit, add, commit, as new version
+  - video indicates first 10 characters of Hash is sufficient (don't need to copy whole thing as I did)
+  
+ 
   
 

@@ -72,9 +72,12 @@ $ git commit -m "brief description of what changed for the log"
 Combining the add and commit steps in one command:
 
 $ git commit -a -m "brief description of your changes"
-  - note that this combination may not picked up completely new "untracked files"
+$ git commit -am "brief description of your changes"
+  - note that this combination may not pick up completely new "untracked files"
+  - note that this option also does not address deleted / renamed files and folders
   - regarding new untracked files:  substituting --all for -a does not resolve this issue
-  - if "git status" still shows untracked files, try adding it seprately and then committing the new files
+  - the --all will address any deleted or removed files (just not untracked files)
+  - if "git status" still shows untracked files, try adding them seprately and then committing the new files
 
 Made changes?  update / ammend the previous commit before pushing:
 
