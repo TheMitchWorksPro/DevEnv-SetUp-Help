@@ -1,3 +1,5 @@
+Original Text file version: 
+
 Lessons in creating and working with branches
 
 * This topic is documented from watching online videos

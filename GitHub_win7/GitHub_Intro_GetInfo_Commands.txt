@@ -1,3 +1,5 @@
+Original Text file version:
+
 ## Get Information Commands on Git
 
 $ git config --list

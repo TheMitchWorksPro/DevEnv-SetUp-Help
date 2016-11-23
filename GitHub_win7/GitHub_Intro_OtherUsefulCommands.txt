@@ -1,3 +1,5 @@
+Original Text file version:
+
 Useful LINUX syntax and Git Commands
 This will help with all lessons
 in Git Bash
@@ -25,6 +27,8 @@ touch <file>
   
 cat <file>
   - views contents of a text file
+  
+To run a bash script (*.sh):  if in current directory, type whole name with current dir syntax as in:  ./myscript.sh
 
 ====================================================
 Common and Useful Git Commands

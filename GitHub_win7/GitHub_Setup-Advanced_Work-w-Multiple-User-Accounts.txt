@@ -1,3 +1,5 @@
+Original Text file version:
+
 To be developed:
 * setting up Git to work with multiple user accounts/emails
 

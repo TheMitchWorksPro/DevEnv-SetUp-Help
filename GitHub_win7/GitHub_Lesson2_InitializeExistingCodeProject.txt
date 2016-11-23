@@ -1,3 +1,5 @@
+Original Text file version:
+
 About this help topic:  
 ------------------------------
 This lesson includes initializing an existing code project folder

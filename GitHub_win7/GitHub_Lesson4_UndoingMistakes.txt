@@ -1,3 +1,5 @@
+Original Text file version: 
+
 Undoing stuff on GIT
 Source video: https://www.youtube.com/watch?v=vBLjB7PZoK0#t=3.375194
 ========================================================================
