@@ -1,0 +1,29 @@
+Undoing stuff on GIT
+Source video: https://www.youtube.com/watch?v=vBLjB7PZoK0#t=3.375194
+========================================================================
+Notes taken from video - not all of these commands have been tested yet 
+
+Edited file in local directory, saved file, did not add/commit on GIT yet - how to fix it?
+$ git checkout -- myfile.txt
+$ git checkout -- myDirectory
+  - the "--" is current branch (in this case Master), and file we want is specified next
+  - this one command checks out the file from repository and replaces working directory file with it
+  - works on directories too as shown in above syntax
+
+File was staged (added to be committed) but now we want to edit it again:
+$ git reset HEAD file.txt
+  - do git status and it will tell us this syntax
+  - this will unstage file.txt and reset the head so it is not on this commit
+
+$ git reset
+  - will reset everything and let us add and commit again (which is often simpler)
+
+$ git commit --ammend -m "my comment"
+$ git commit --ammend
+  - w/ comment - this ammends the comment on last commit as well as adding new changes to it
+  - just adds new changes to last commit
+  - can only affect last commit (most recent one) before we push
+
+$ tbd ...
+  
+
