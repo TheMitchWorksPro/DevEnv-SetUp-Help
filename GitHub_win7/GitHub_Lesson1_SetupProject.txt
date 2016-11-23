@@ -87,9 +87,17 @@ Updates involving removal of files - note that wildcard "*" must be escaped:
 $ git rm mydir/\*.log
   - removes all .log fils in mydir 
   - then commit and push just like an add command to finalize the changed
+
+$ git rm <file-name>
+  - works like git add but removes file and updates the staging index for the file
+  - this remove deletes it fully (does not leave one in recycle bin)
+
+$ git mv <file> <renamed file>
+  - move command can rename files and record in index
+  - use paths in syntax to move the file from source to target
   
 $ git add --all
-  - this is supposed to add all changes including multiple deletes (of files)
+  - this is supposed to add all changes including multiple deletes (of files), renames, etc.
   - in testing:  deleted a .docx and added a PDF - it made both changes
   - in video:  instructor deleted all folders on a branch and this add picked up the entire whipe-out change  
   

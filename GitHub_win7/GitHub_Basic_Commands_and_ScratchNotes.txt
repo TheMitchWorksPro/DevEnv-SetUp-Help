@@ -15,8 +15,18 @@ Tools recommended in GitHub trainings:
 URLs:
 * https://www.youtube.com/watch?v=HVsySz-h9r4
   ** Video by Corey Schafer (has many, this one was: "command line basics")
+  
 * https://www.youtube.com/watch?v=ugN-IYV1NTM#t=981.252081
-  ** 90 minute more detailed video by Timothy Corey
+  ** 90 minute more detailed video by Timothy Corey (Lessons created from this author)
+  ** More by same author:
+     + https://www.youtube.com/watch?v=_vEPmy31XDE
+       ++ 20 minute overview of history and how it works:  no demos of actually working in Git
+  
+     + https://www.youtube.com/watch?v=iIjl4mj4AMc#t=899.097549
+       ++ Install Git on a Macintosh inclusing package managers for different OS's, etc. 
+  
+     + https://www.youtube.com/watch?v=vBLjB7PZoK0#t=3.375194
+       ++ Undoing changes in GIT (30 min)
   
 * git-scm.com/downloads
   ** to download Git Desktop
@@ -189,6 +199,8 @@ Interesting Projects on GitHub (other users)
 ==============================================
 https://github.com/geekcomputers
 
+Find other interesting projects and code-bases:
+https://github.com/explore/
 
 ==============================================
 Future Research

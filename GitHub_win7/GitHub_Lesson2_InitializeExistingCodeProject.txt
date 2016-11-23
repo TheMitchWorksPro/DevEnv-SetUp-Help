@@ -46,6 +46,7 @@ $ git remote
 $ git push -u origin master
   - use -u switch first time only to get content pushed up to new remote repository
   - may be prompted for password to remote repository (or login popup may occur)
+  - this command not needed for first push after cloning operation;  Only needed here for folder we initialized
   
 Then - should be able to use same add, commit, push commands as in lesson 1 once all is set up
 

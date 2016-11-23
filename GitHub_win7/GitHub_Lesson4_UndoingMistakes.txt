@@ -13,7 +13,8 @@ $ git checkout -- myDirectory
 File was staged (added to be committed) but now we want to edit it again:
 $ git reset HEAD file.txt
   - do git status and it will tell us this syntax
-  - this will unstage file.txt and reset the head so it is not on this commit
+  - this will unstage file.txt and reset the head 
+  - this step undoes an add file operation so we can edit more and re-stage it
 
 $ git reset
   - will reset everything and let us add and commit again (which is often simpler)
