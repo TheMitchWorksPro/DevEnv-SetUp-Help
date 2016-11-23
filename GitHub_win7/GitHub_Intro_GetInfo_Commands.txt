@@ -1,3 +1,5 @@
+## Get Information Commands on Git
+
 $ git config --list
   - shows all configuration settings for this Git session
   
