@@ -1,38 +1,43 @@
-Original Text file version: 
 
-Undoing stuff on GIT
+# Undoing Stuff on Git - Fixing Mistakes
+<br/>
+
 Source video: https://www.youtube.com/watch?v=vBLjB7PZoK0#t=3.375194
-========================================================================
-Notes taken from video - not all of these commands have been tested yet 
+
+----
+Notes taken from video - not all of these commands have been tested yet.
+<br/>
+<br/>
 
 Edited file in local directory, saved file, did not add/commit on GIT yet - how to fix it?
-$ git checkout -- myfile.txt
-$ git checkout -- myDirectory
+- \$ git checkout -- myfile.txt
+- \$ git checkout -- myDirectory
   - the "--" is current branch (in this case Master), and file we want is specified next
   - this one command checks out the file from repository and replaces working directory file with it
   - works on directories too as shown in above syntax
+<br/>
 
 File was staged (added to be committed) but now we want to edit it again:
-$ git reset HEAD file.txt
+- \$ git reset HEAD file.txt
   - do git status and it will tell us this syntax
   - this will unstage file.txt and reset the head 
   - this step undoes an add file operation so we can edit more and re-stage it
+<br/>
 
-$ git reset
+- \$ git reset
   - will reset everything and let us add and commit again (which is often simpler)
+<br/>
 
-$ git commit --ammend -m "my comment"
-$ git commit --ammend
+- \$ git commit --ammend -m "my comment"
+- \$ git commit --ammend
   - w/ comment - this ammends the comment on last commit as well as adding new changes to it
   - just adds new changes to last commit
   - can only affect last commit (most recent one) before we push
+<br/>
 
 Example of editing previously committed content:  
-$ git checkout 6afab5e706a5327ca41336da1946759677eedb9f -- GitHub_Lesson4_UndoingMistakes.txt
+- \$ git checkout 6afab5e706a5327ca41336da1946759677eedb9f -- GitHub_Lesson4_UndoingMistakes.txt
   - this would checkout above mentioned file for editing from commit identified by hash ID
   - it should effectively revert file to this earlier version so we can edit, add, commit, as new version
   - video indicates first 10 characters of Hash is sufficient (don't need to copy whole thing as I did)
-  
- 
-  
-
+<br/>
