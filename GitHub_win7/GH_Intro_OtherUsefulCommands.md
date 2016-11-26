@@ -3,6 +3,11 @@
 Useful LINUX syntax and Git / Bash Commands that can help with general usage
 and in the lessons files that make up this project.  Note that many of these commands
 do not start with "git" and should be typed as indicated after the \$ prompt.
+<br/>
+
+For more help using LINUX commands on Git Bash - this command reference can help:
+- http://www.yolinux.com/TUTORIALS/unix_for_dos_users.html
+
 
 ## LINUX and Git Syntx
 

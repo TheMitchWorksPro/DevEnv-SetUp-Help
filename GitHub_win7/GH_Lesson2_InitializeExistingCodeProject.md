@@ -101,11 +101,11 @@ Subsequent pushes can use:  - \$ git push
 <br/>
 
 Idea to be tested:
-1. kill .git folder using:  rm -rf .git
-2. Perform any final changes that will become the new live content
-3. Delete project on GIT
-4. re-create project (do not create Readme.md, or other starter fils project already has)
-5. follow initialization steps and commit the local project back to new online repo as intial commit
+1 Kill .git folder using:  rm -rf .git
+2 Perform any final changes that will become the new live content
+3 Delete project on GIT
+4 Re-create project (do not create Readme.md, or other starter fils project already has)
+5 Follow initialization steps and commit the local project back to new online repo as intial commit
 
 
   

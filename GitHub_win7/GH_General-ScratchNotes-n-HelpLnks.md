@@ -48,9 +48,10 @@ Note:  Git integrates with "Clear Case" and "Subversion" (mentioned in intro tra
   
      + https://www.youtube.com/watch?v=vBLjB7PZoK0#t=3.375194
        ++ Undoing changes in GIT (30 min)
-  
+<br/>  
 - git-scm.com/downloads
-  - to download Git Desktop
+  - to download Git Desktop<br/>
+  
 - some help links and resources found while exploring initial setup:
   - https://guides.github.com/activities/hello-world/
   - https://help.github.com/articles/set-up-git/
@@ -60,6 +61,10 @@ Note:  Git integrates with "Clear Case" and "Subversion" (mentioned in intro tra
   - https://git-scm.com/doc
   - Git Pro (book) available online for free:  https://git-scm.com/book/en/v2
     + **note:** has link to download PDF as well for offline copy
+<br/>
+
+Helpful commands - UNIX for DOS/Windows Users:  
+- http://www.yolinux.com/TUTORIALS/unix_for_dos_users.html
 
 ### Excerpt from above book on getting help on Git
 
