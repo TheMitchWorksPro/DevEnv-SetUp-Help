@@ -13,7 +13,7 @@ For more help using LINUX commands on Git Bash - this command reference can help
 
 ## LINUX and Git Syntx
 
-- \$ ls - la
+- $ ls - la
   - list all files showing file sizes (does not show what is in sub folders - just current folder or directory)
 
 - $\ ls - la .git
