@@ -7,7 +7,9 @@ do not start with "git" and should be typed as indicated after the \$ prompt.
 
 For more help using LINUX commands on Git Bash - this command reference can help:
 - http://www.yolinux.com/TUTORIALS/unix_for_dos_users.html
-
+- More advanced options: 
+  - http://www.faqs.org/docs/abs/HTML/options.html
+<br/>
 
 ## LINUX and Git Syntx
 
@@ -36,7 +38,6 @@ For more help using LINUX commands on Git Bash - this command reference can help
 
 ----
 
-
 ## Common and Useful Git Commands
 
 - \$ clear
@@ -51,14 +52,33 @@ For more help using LINUX commands on Git Bash - this command reference can help
   - force the push
   - common usage:  Git thinks something changed on the remote (online) repository but you know nothing has changed
   - use this to force your push to go through and over-write what is on git repository  
+<br/>
 
 - \$ cat .gitconfig
   - displays .gitconfig
   - must use cd ~ to get to correct directory first
+<br/>
 
 - \$ git config --global color.ui true
   - use this to set bash screen to show things in color if not doing this already
-  
+<br/>
+
+- to exclude files across all repositories without writing it to .gitignore (for all projects)
+  - note: this means the ignore is local to my machine and does not affect other users who share my project
+  - \$ .git config --global core.excludesfile <File path>
+  - can name it whatever you want
+  - example: \$ .git config --global core.excludesfile ~/.gitignore_global 
+
+- Tracked files cannot be ignored by default - how to overcome this?
+  - \$ git rm --cached <filename>
+    - this tells git to remove the file not from the repository, but rather, from the staging area  
+<br/>
+
+- Empty directories are not tracked - how to overcome this?
+  - \$ touch .gitkeep
+    - creates empty file so git will track the folder
+	- git tracks files, not folders and needs a file in the folder to track it 
+	
 ----
 ## Basic Help Commands
 
@@ -69,4 +89,16 @@ Try all of these for different help pages:
 - \$ git help -all
 - \$ git help -g
 
+## Dangerous Commands!
+  
+- \$ git clean -f
+  - removes untracked files from working directory all in one shot
+  - can use windows to delete files instead, but this may make process easier
+  - this is more dangerous because files are permanently gone (not even in the trash)
+- \$ git clean -n 
+  - test run:  shows what will / will not be removed if we run for real
+<br/>
+
+
+  
 

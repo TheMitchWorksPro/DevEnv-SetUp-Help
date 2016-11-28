@@ -161,7 +161,7 @@ Later:<br/>
 - \$ git add -A
   - adds all to staging area (not committed yet)
 
-- \$ git reset filename
+- \$ git reset HEAD <filename>
   - removes file from staging so it won't be committed
 
 - \$ git reset

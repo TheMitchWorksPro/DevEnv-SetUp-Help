@@ -75,6 +75,7 @@ in the next lesson.
     - git reset
 	  - uncommits everything so nothing is staged to be pushed
 	  - options can tell what to reset (if not looking to reset all)
+	  - typical reset of just one file:  \$ git reset HEAD <filename>
 
 ### Combining the add and commit steps in one command:
 

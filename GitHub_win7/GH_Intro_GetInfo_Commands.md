@@ -51,6 +51,15 @@
   - older versions of git use --cached
   - compares staging index instead of local directory to remote repo
 <br/>
+
+Useful informational command:  what does head point to?
+- \$ cat .git/head
+  - this returns a reference path like this:  ref: refs/heads/master
+  - use cat .git/<ref path> to get SHA ID of commit head points to as in:
+    - cat .git/refs/heads/master
+
+<br/>
+
 Need to do something using LINUX tools on Bash?  This command reference can help:
 - http://www.yolinux.com/TUTORIALS/unix_for_dos_users.html
   
