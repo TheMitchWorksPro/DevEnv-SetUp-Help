@@ -87,11 +87,9 @@ in the next lesson.
   - the --all will address any deleted or removed files (just not untracked files)
   - if "git status" still shows untracked files, try adding them seprately and then committing the new files
 
-###Made changes?  update / ammend the previous commit before pushing:
+### Made changes?  update / ammend the previous commit before pushing:
 
-- $ git commit --amend
-
-<br/>	  
+- $ git commit --amend  
 - $ git push
 
 ### Updates involving removal of files - note that wildcard "*" must be escaped:

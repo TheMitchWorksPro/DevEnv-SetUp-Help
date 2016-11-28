@@ -117,7 +117,6 @@ Useful informational command:  what does head point to?
 		  - provided not garbage collected, can reset again with SHA-IDs from our copy of the lost history
 		  - this can effectively get back the "working content we lost" provided that content was committed 
 	
-Note:  last left off in video:  ?
 
 
 
