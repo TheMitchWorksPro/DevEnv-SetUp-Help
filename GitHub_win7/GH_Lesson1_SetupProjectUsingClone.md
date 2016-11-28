@@ -21,18 +21,18 @@ Do not edit in both places (online and local) after cloning or problems will res
 and finally, editing Readme.md on Git and synching that update to your local copy so work can continue later.
 
 <br/>In the content that follows, "$" represents the prompt, type commands after the "$" as in:
-- \$ git
+- $ git
   - All you type is "git" to get a list of all git commands
 
 - From Github Desktop, use these commands:
-  - \$ cd "root folder for your git project"
+  - $ cd "root folder for your git project"
     - note:  
 	  - on windows, choose a working location that is not too deep.  
       - If paths gets to be 260 characters or more in length, it may fail
 	  - Depending on your installation, you may need to convert paths from "c:\mypath\folder" to "c:/mypath/folder"
 
-- \$ git clone <URL to clone from project you created on Github>
-- \$ cd "projectName" 
+- $ git clone <URL to clone from project you created on Github>
+- $ cd "projectName" 
   - this will be last folder in URL you used to clone
   - this will be the project folder locally after you clone it
   - you can test with "dir" before changing directory
@@ -42,7 +42,7 @@ and finally, editing Readme.md on Git and synching that update to your local cop
 ## Edit Some Files Locally.
 Edit process (except first time you do it), is pretty much the same whether you clone a project or initialize it as explained
 in the next lesson.
-- \$ git status
+- $ git status
   - should show you what was edited so you can enter commands to update on Git (online)
 <br/>
 
@@ -51,12 +51,12 @@ in the next lesson.
   - use -A switch to add all new content
 <br/>
 
-- \$ git add myFile.ext
-- \$ git add someFolder\myfile.ext
-- \$ git add someFolder\
+- $ git add myFile.ext
+- $ git add someFolder\myfile.ext
+- $ git add someFolder\
 
 <br/>
-- \$ git add - A
+- $ git add - A
   - this also works:  git add .
   - to get it to skip some files:
     - touch .gitignore
@@ -68,19 +68,19 @@ in the next lesson.
   
 ### These commands commit your changes and finalize them on Git:
 
-- \$ git commit -m "brief description of what changed for the log"
+- $ git commit -m "brief description of what changed for the log"
   - suppose you do the commit, then make another edit or realize you want to add more files?
   - after completing the changes and add them, you can use:  git commit --amend
   - make a mistake?  
     - git reset
 	  - uncommits everything so nothing is staged to be pushed
 	  - options can tell what to reset (if not looking to reset all)
-	  - typical reset of just one file:  \$ git reset HEAD <filename>
+	  - typical reset of just one file:  $ git reset HEAD <filename>
 
 ### Combining the add and commit steps in one command:
 
-- \$ git commit -a -m "brief description of your changes"
-- \$ git commit -am "brief description of your changes"
+- $ git commit -a -m "brief description of your changes"
+- $ git commit -am "brief description of your changes"
   - note that this combination may not pick up completely new "untracked files"
   - note that this option also does not address deleted / renamed files and folders
   - regarding new untracked files:  substituting --all for -a does not resolve this issue
@@ -89,29 +89,29 @@ in the next lesson.
 
 ###Made changes?  update / ammend the previous commit before pushing:
 
-- \$ git commit --amend
+- $ git commit --amend
 
 <br/>	  
-- \$ git push
+- $ git push
 
 ### Updates involving removal of files - note that wildcard "*" must be escaped:
 
-- \$ git rm mydir/\*.log
+- $ git rm mydir/\*.log
   - removes all .log fils in mydir 
   - then commit and push just like an add command to finalize the changed
 
 <br/>
-- \$ git rm <file-name>
+- $ git rm <file-name>
   - works like git add but removes file and updates the staging index for the file
   - this remove deletes it fully (does not leave one in recycle bin)
 
 <br/>
-- \$ git mv <file> <renamed file>
+- $ git mv <file> <renamed file>
   - move command can rename files and record in index
   - use paths in syntax to move the file from source to target
 
 <br/>  
-- \$ git add --all
+- $ git add --all
   - this is supposed to add all changes including multiple deletes (of files), renames, etc.
   - in testing:  deleted a .docx and added a PDF - it made both changes
   - in video:  instructor deleted all folders on a branch and this add picked up the entire whipe-out change  
@@ -120,10 +120,10 @@ in the next lesson.
 - Make a change back in the online project (Git remore repo at internet URL):
   - before you change anything locally you need to pull and merge into the local project
   - simply use this command and it should solve the problem:
-    - \$ git pull
+    - $ git pull
     - if no changes exist to pull - you will get an up-to-date message
     - note above syntax assumes simple project setup (master branch which is created by default)	
 
 <br/>
-- \$ git log 
+- $ git log 
   - can show all commits that have taken place

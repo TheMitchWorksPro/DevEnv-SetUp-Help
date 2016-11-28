@@ -12,47 +12,47 @@ projects.  Note:  LINUX commands and bash syntax apply as in earlier lessons.
 ----
 ## Commands Explained:
 
-- \$ ls -la
+- $ ls -la
   - list files
 <br/>
 
-- \$ git init
+- $ git init
   - builds .git folder and initiates tracking for git
   - do this from the folder you want to initialize
 <br/>
 
-- \$ git init my_project
+- $ git init my_project
   - will build the subfolder and initialize it
 <br/>
 
-- \$ rm -rf .git
+- $ rm -rf .git
   - removes .git folder and effectively stops tracking this code folder (reverses git init)
   - note:  this is a LINUX command, not a git command (called in bash as a LINUX tool)
   - you will know it worked because after removal of the .git directory, the directory will stop listing with the (branch) 
   - example:  before -- c:\myGitRepo (master)  after -- c:\myGitRepo 
 <br/>
   
-- \$ git status
+- $ git status
   - check what is in project and at this stage is untracked
   - can use this command at any time for status of project before executing commands
 <br/>
 
-- \$ touch .gitignore
+- $ touch .gitignore
   - touch creates a blank text file using name specified
   - .gitignore is used to build a list of files to ignore (edit manually to add files to ignore)
   - .gitignore can take wild card arguments like:  myPattern*.*
   - if using paths to a file, use "/" as in:  myfolder/myfile.txt
 <br/>
   
-- \$ git remote add origin <url to remote project>
+- $ git remote add origin <url to remote project>
   - add local project to remote repository (at URL provided)
 <br/>
   
-- \$ git remote
+- $ git remote
   - shows all remotes hooked up to this local project (will say "origin" right after previous command)
 <br/>
 
-- \$ git push -u origin master
+- $ git push -u origin master
   - use -u switch first time only to get content pushed up to new remote repository
   - may be prompted for password to remote repository (or login popup may occur)
   - this command not needed for first push after cloning operation;  Only needed here for folder we initialized
@@ -65,21 +65,21 @@ Then: you should be able to use same add, commit, push commands as in lesson 1 o
 ## Step-by-Step Example - Initializing a Project
 <br/>
 
-- \$ git init
+- $ git init
   - initializes project (in this case - folder with existing code to add to remote repo)
 <br/>
   
-- \$ git status
+- $ git status
   - check status of project -- if uncommitted, then execute next command to commit all uncommitted content
 <br/>
 
-- \$ git commit -a -m "Initial Commit"
+- $ git commit -a -m "Initial Commit"
   - if this fails, break it apart to these commands:
   - git add .
   - git commit -m "Initial Commit"
 <br/>
 
-- \$ git remote add origin https://github.com/TheMitchWorksPro/TestProject.git
+- $ git remote add origin https://github.com/TheMitchWorksPro/TestProject.git
 <br/>
 
 **Note:**  Before this step, the above repository must be created on GIT if it is not there already.
@@ -87,10 +87,10 @@ Then: you should be able to use same add, commit, push commands as in lesson 1 o
 - syntax which follows is for first push only ...
 <br/>
 
-- \$ git push -u origin master
+- $ git push -u origin master
 <br/>
 
-Subsequent pushes can use:  - \$ git push
+Subsequent pushes can use:  - $ git push
 
 ----
 ## Re-Initializing a Project to kill its tracking history

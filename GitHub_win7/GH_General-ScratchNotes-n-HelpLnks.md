@@ -72,14 +72,14 @@ Getting Help:<br/>
 If you ever need help while using Git, there are three ways to get the manual page (manpage) 
 help for any of the Git commands:
 
-- \$ git help <verb>
-- \$ git <verb> --help
-- \$ man git-<verb>
+- $ git help <verb>
+- $ git <verb> --help
+- $ man git-<verb>
   - this command did not work on my Windows 7 installation (using Git Bash)
 
 For example, you can get the manpage help for the config command by running
 
-- \$ git help config
+- $ git help config
 
 These commands are nice because you can access them anywhere, even offline. 
 If the manpages and this book aren’t enough and you need in-person help, 
@@ -103,10 +103,10 @@ https://github.com/explore/
 
 ## After Installation of Git Desktop (command line interface):
 
-- \$ git config --global user.name "username"
-- \$ git config --global user.email "email@email.com"
-- \$ git --version
-- \$ git
+- $ git config --global user.name "username"
+- $ git config --global user.email "email@email.com"
+- $ git --version
+- $ git
   - all by itself lists all git commands
 
 ## Clone repository off GitHub
@@ -114,23 +114,23 @@ https://github.com/explore/
 - git clone "https://github.com/ ...<project on Github>" .
   - \. is local folder (cd to it first or put in path where to clone to)
 
-- \$ git status
+- $ git status
   - find out what needs to be added / committed back to remote project
 
-- \$ git add <file-name>
-- \$ git add -A
+- $ git add <file-name>
+- $ git add -A
   - add all files in local project
 
-- \$ git commit -m "comment for commit"
-- \$ git push
+- $ git commit -m "comment for commit"
+- $ git push
 
 ### Git Project Update (work on cloned project from online repo)
 
-- \$ git pull
+- $ git pull
   - pull down all content to make sure project is up to date
 
 Other commands:<br/>
-- \$ git log
+- $ git log
   -  shows all previous commit activities and shows if project is up to date at end of log
   
 ----
@@ -138,46 +138,46 @@ Other commands:<br/>
 ## Git Set Up Local to use Remote Project without Cloning
 **(Project exists but has nothing it in, now want to use what is on PC to build remote project)**
 
-- \$ git log
-- \$ git remote add origin "https://github.com ... <project>"
-- \$ git push -u origin master
-- \$ git push
+- $ git log
+- $ git remote add origin "https://github.com ... <project>"
+- $ git push -u origin master
+- $ git push
   - subsequent updates after first one using "-u origin master"
 
 Later:<br/>
-\$ git pull origin master
+$ git pull origin master
 
 ----
 
 ## Misc. Commands
 
-- \$ git init
+- $ git init
   - creates .git folder
   - can delete or "rm - r .git" (to remove the folder so folder is not trackd on git)
 
-- \$ touch .gitignore
+- $ touch .gitignore
   - build ignore file (list files to ignore during updates in this file)
 
-- \$ git add -A
+- $ git add -A
   - adds all to staging area (not committed yet)
 
-- \$ git reset HEAD <filename>
+- $ git reset HEAD <filename>
   - removes file from staging so it won't be committed
 
-- \$ git reset
+- $ git reset
   - removes all files from staging so they won't be committed
 
-- \$ git diff
+- $ git diff
   - shows differences in code file(s)
   
-- \$ git remote -v
+- $ git remote -v
   - shows files in remote repo
 
-- \$ git branch -a
+- $ git branch -a
   - lists all branches (remote and local)
 
-- \$ git pull original master
-- \$ git push original master
+- $ git pull original master
+- $ git push original master
 
 UNIX from demo?<br/>
 ls -la (lists files)
@@ -187,33 +187,33 @@ ls -la (lists files)
 
 ## Branching / Merging
 Branching:
-- \$ git branch
+- $ git branch
   - lists branches
 
-- \$ git branch <branch name>
+- $ git branch <branch name>
   - provides info on branch of given name
 
-- \$ git checkout <branch name>
+- $ git checkout <branch name>
   - check out branch to work on it
 
-- \$ git push -u origin <branch>
-- \$ git branch -a
+- $ git push -u origin <branch>
+- $ git branch -a
 
 
 Merging:
-- \$ git checkout master
-- \$ git pull origin master
-- \$ git pull origin master
-- \$ git branch --merged
+- $ git checkout master
+- $ git pull origin master
+- $ git pull origin master
+- $ git branch --merged
   - tell us what has been merged so  far
 
-- \$ git push origin master
-- \$ git branch --merged
+- $ git push origin master
+- $ git branch --merged
   - check what was merged
-- \$ git branch -d <branch name>
+- $ git branch -d <branch name>
   - deletes branch (locally)
-- \$ git branch -a
-- \$ git push origin --delete <branch name>
+- $ git branch -a
+- $ git push origin --delete <branch name>
   - delete branch remotely
 
 ----

@@ -10,46 +10,46 @@ Notes taken from video - not all of these commands have been tested yet.
 <br/>
 
 Edited file in local directory, saved file, did not add/commit on GIT yet - how to fix it?
-- \$ git checkout -- myfile.txt
-- \$ git checkout -- myDirectory
+- $ git checkout -- myfile.txt
+- $ git checkout -- myDirectory
   - the "--" is current branch (in this case Master), and file we want is specified next
   - this one command checks out the file from repository and replaces working directory file with it
   - works on directories too as shown in above syntax
 <br/>
 
 File was staged (added to be committed) but now we want to edit it again:
-- \$ git reset HEAD file.txt
+- $ git reset HEAD file.txt
   - do git status and it will tell us this syntax
   - this will unstage file.txt and reset the head 
   - this step undoes an add file operation so we can edit more and re-stage it
 <br/>
 
-- \$ git reset
+- $ git reset
   - will reset everything and let us add and commit again (which is often simpler)
 <br/>
 
-- \$ git commit --ammend -m "my comment"
-- \$ git commit --ammend
+- $ git commit --ammend -m "my comment"
+- $ git commit --ammend
   - w/ comment - this ammends the comment on last commit as well as adding new changes to it
   - if nothing staged (from previous add operations) - syntax above can change just the commit message
   - w/o -m: just adds new changes to last commit
   - can only affect last commit (most recent one) before we push
 <br/>
 
-- \$ git diff -- staged
+- $ git diff -- staged
   - shows difference between what is staged and prior edit
   - can show what changed with previous action so you can check it before committing it to finalize the reversion change
   
 
 Example of editing previously committed content (1 file at a time):  
-- \$ git checkout 6afab5e706a5327ca41336da1946759677eedb9f -- GitHub_Lesson4_UndoingMistakes.txt
+- $ git checkout 6afab5e706a5327ca41336da1946759677eedb9f -- GitHub_Lesson4_UndoingMistakes.txt
   - this would checkout above mentioned file for editing from commit identified by hash ID
   - it should effectively revert file to this earlier version so we can edit, add, commit, as new version
   - video indicates first 10 characters of Hash is sufficient (don't need to copy whole thing as I did)
 <br/>
 
 Example of reversing all changes made by a previous commit:  
-- \$ git revert 6afab5e706a5327ca41336da1946759677eedb9f 
+- $ git revert 6afab5e706a5327ca41336da1946759677eedb9f 
   - this should reverse all changes and commit the results
   - you will be prompted to enter the commit message (default text editor should pop up like during "git commit")
   - save and close your message and process will complete
@@ -59,7 +59,7 @@ Example of reversing all changes made by a previous commit:
 <br/>
 
 Useful informational command:  what does head point to?
-- \$ cat .git/head
+- $ cat .git/head
   - this returns a reference path like this:  ref: refs/heads/master
   - use cat .git/<ref path> to get SHA ID of commit head points to as in:
     - cat .git/refs/heads/master
@@ -69,8 +69,8 @@ Useful informational command:  what does head point to?
   - once reset is performed, you cannot find the items in the log that you are "re-winding" over
 <br/>
 
-- \$ git reset --soft <SHA ID for commit to reset back to>
-  - Example:  \$ git reset --soft 6afab5e706a5327ca41336da1946759677eedb9f
+- $ git reset --soft <SHA ID for commit to reset back to>
+  - Example:  $ git reset --soft 6afab5e706a5327ca41336da1946759677eedb9f
   - What this does:  
     - Head pointer moved to new location
 	- if location is 3 commits back, then the two most recent will be lost when we add / commit current working
@@ -84,8 +84,8 @@ Useful informational command:  what does head point to?
   - once reset is performed, you cannot find the items in the log that you are "re-winding" over
 <br/>
 
-- \$ git reset --mixed <SHA ID for commit to reset back to>
-  - Example:  \$ git reset --mixed 6afab5e706a5327ca41336da1946759677eedb9f
+- $ git reset --mixed <SHA ID for commit to reset back to>
+  - Example:  $ git reset --mixed 6afab5e706a5327ca41336da1946759677eedb9f
   - What this does:  
     - Head pointer moved to new location
 	- if location is 3 commits back, then the two most recent will be lost when we add / commit current working
@@ -101,8 +101,8 @@ Useful informational command:  what does head point to?
   - once reset is performed, you cannot find the items in the log that you are "re-winding" over
 <br/>
 
-- \$ git reset --hard <SHA ID for commit to reset back to>
-  - Example:  \$ git reset --hard 6afab5e706a5327ca41336da1946759677eedb9f
+- $ git reset --hard <SHA ID for commit to reset back to>
+  - Example:  $ git reset --hard 6afab5e706a5327ca41336da1946759677eedb9f
   - What this does:  
     - Head pointer moved to new location
 	- if location is 3 commits back, then the two most recent will be lost when we add / commit current working
