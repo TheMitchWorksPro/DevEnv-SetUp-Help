@@ -1,7 +1,16 @@
 # Other Useful Commands on GIT
+This topic organizes misc. useful commands into these sections:
+1 LINUX and Git Syntx
+2 Common and Useful Git Commands
+3 Commands used in Debugging of Common Problems
+  1 .gitignore and related setup and debugging help
+4 Basic Help Commands
+5 Dangerous Commands
+
+## LINUX and Git Syntx
 
 Useful LINUX syntax and Git / Bash Commands that can help with general usage
-and in the lessons files that make up this project.  Note that many of these commands
+and in the lessons files that make up this project.  Note that these commands
 do not start with "git" and should be typed as indicated after the $ prompt.
 <br/>
 
@@ -10,8 +19,6 @@ For more help using LINUX commands on Git Bash - this command reference can help
 - More advanced options: 
   - http://www.faqs.org/docs/abs/HTML/options.html
 <br/>
-
-## LINUX and Git Syntx
 
 - $ ls - la
   - list all files showing file sizes (does not show what is in sub folders - just current folder or directory)
@@ -32,9 +39,9 @@ For more help using LINUX commands on Git Bash - this command reference can help
   
 - $ cat <file>
   - views contents of a text file
-  
+<br/>
 
-<br/>To run a bash script (*.sh):  if in current directory, type whole name with current dir syntax as in:  ./myscript.sh
+To run a bash script (*.sh):  if in current directory, type whole name with current dir syntax as in:  ./myscript.sh
 
 ----
 
@@ -63,11 +70,14 @@ For more help using LINUX commands on Git Bash - this command reference can help
   - use this to set bash screen to show things in color if not doing this already
 <br/>
 
+### .gitignore and related setup and debugging help
+
 - to exclude files across all repositories without writing it to .gitignore (for all projects)
   - note: this means the ignore is local to my machine and does not affect other users who share my project
   - $ .git config --global core.excludesfile <File path>
   - can name it whatever you want
   - example: $ .git config --global core.excludesfile ~/.gitignore_global 
+<br/>
 
 - Tracked files cannot be ignored by default - how to overcome this?
   - $ git rm --cached <filename>
@@ -78,6 +88,18 @@ For more help using LINUX commands on Git Bash - this command reference can help
   - $ touch .gitkeep
     - creates empty file so git will track the folder
 	- git tracks files, not folders and needs a file in the folder to track it 
+<br/>
+
+- URLs / Templates to help set up .gitignore files:
+  - https://help.github.com/articles/ignoring-files
+  - https://github.com/github/gitignore 
+<br/>
+
+- Helpful syntax tips for .gitignore file
+  - basic regular expression support: * ?[aeiou][0-9]
+  - negate wild-card expressions using "!"
+    - *.php
+	- !myFileToInclude.php
 	
 ----
 ## Basic Help Commands

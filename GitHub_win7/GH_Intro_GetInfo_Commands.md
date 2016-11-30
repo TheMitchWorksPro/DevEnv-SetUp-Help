@@ -2,26 +2,35 @@
 
 - $ git config --list
   - shows all configuration settings for this Git session
+<br/>
   
 - $ git config --global --list
   - shows just global variables
+<br/>
 
 - $ git config --global <variable name>
 - $ git config <variable name>
   - get individual local (to the project environment) and global variables
+<br/>
     
 - $ git remote -v
   - lists remote repositories (associated to this working folder)
+  - without -v:  just repostories listed like:  "origin" (blank if none)
+  - with -v:  lists full URL for Fetch and Push operations
+<br/>
 
 - $ git branch -a
   - lists branches for our working folder project (all branches local and remote)
+<br/>
 
 - $ git branch
   - on a local unbranched project, this would return "master"
   - might be just local branches, need to test for difference w/ git branch -a 
+<br/>
   
 - $ git status
   - get status of all adds / commits / changes (what's tracked / what's not tracked) on current branch
+<br/>
 
 - $ git log
 - $ git log -n 2
@@ -35,9 +44,11 @@
   - since / until - use these to carve out by date what entries you wish to see
   - author is a pattern match getting just log entries with "mitch" in the name (for example)
   - grep stands for:  Global Regular ExPression search; simple example:  grep="bug" (all entries with text "bug" in them for bug fixes)
+<br/>
   
 - $ git --version
   - what version of Git we are using
+<br/>
 
 - $ git diff 
   - what's different between remote repo and local repo
@@ -46,6 +57,7 @@
   - when you get to end, use "q" to quit
   - expected commands:  f and b for forward and backwards through each page of content and q to quit
   - hitting other keys can have strange and unexpected behaviors on the screen but you can still use "q" to get out  
+<br/>
 
 - $ git diff --staged
   - older versions of git use --cached
@@ -57,10 +69,14 @@ Useful informational command:  what does head point to?
   - this returns a reference path like this:  ref: refs/heads/master
   - use cat .git/<ref path> to get SHA ID of commit head points to as in:
     - cat .git/refs/heads/master
+<br/>
 
+-  cat .git/config
+   - view project configuration including remote URLs and branches 
 <br/>
 
 Need to do something using LINUX tools on Bash?  This command reference can help:
 - http://www.yolinux.com/TUTORIALS/unix_for_dos_users.html
+- http://www.faqs.org/docs/abs/HTML/options.html
   
  
