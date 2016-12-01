@@ -101,10 +101,13 @@ Notes:  help documentation indicated that -d let you test delete while -D made i
   - example:  - $ git push origin master
 <br/>
   
-- $ git branch <branch-to-be-created> <source of content for this branch>
+- $ git branch <branch-to-be-created> <source of content for this branch - on remote server>
   - choices for second argument include:  HEAD, a specific commit, or a branch from the remote repo like "origin/master"
   - example:  $ git branch devWork origin/devWork
     - this example pulls down a copy of the devWork branch from our repo into a new local branch of the same name-of-branch  
-    - use git branch -r to get exact name/syntax of branch to pull down  
+    - use git branch -r to get exact name/syntax of branch to pull down
+  - to create and check out a local copy of a branch on the remote server
+    - git branch -b <branch-to-create> <branch-on-rempte-server>  
+<br/>
 Note:  You cannot check out a remote branch, you can only copy it down locally to work on it and then push back up.	
 	
