@@ -9,8 +9,9 @@
 ## Command List for Working With Branching
 
 - $ git branch "name-of-branch"
-  - creates a new branch
+  - creates a new branch (empty branch to work in)
   - example:  git branch devWork
+  - branches can be created "from something" - this is covered in more detail later in this document
 <br/>
 
 - $ git checkout "name-of-branch" 
@@ -87,7 +88,7 @@ Notes:  help documentation indicated that -d let you test delete while -D made i
 - $ git fetch
   - pulls down all branches from remote repository
   - you cannot switch to them; you can only merge them into your working branch
-  - if you use this, next step is a merge command 
+  - if you use this, next step is:  $ git merge  
 <br/>
  
 - $ git pull <remote> <branch>
@@ -100,4 +101,10 @@ Notes:  help documentation indicated that -d let you test delete while -D made i
   - example:  - $ git push origin master
 <br/>
   
-- $ ...
+- $ git branch <branch-to-be-created> <source of content for this branch>
+  - choices for second argument include:  HEAD, a specific commit, or a branch from the remote repo like "origin/master"
+  - example:  $ git branch devWork origin/devWork
+    - this example pulls down a copy of the devWork branch from our repo into a new local branch of the same name-of-branch  
+    - use git branch -r to get exact name/syntax of branch to pull down  
+Note:  You cannot check out a remote branch, you can only copy it down locally to work on it and then push back up.	
+	
