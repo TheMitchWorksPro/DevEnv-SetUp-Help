@@ -45,8 +45,8 @@ During editing of the new Branch:
  - Git Add and Commit commands allow system to track changes for push or merge
  - Push is not used unless you want to share the branch with your online or server based project
  - For simple project you are working on by yourself - just use:
-   - - $ git add --all (or other variants)
-   - - $ git commit
+   - $ git add --all (or other variants)
+   - $ git commit
    - Then you are ready to merge
 <br/>
 
@@ -54,8 +54,6 @@ Now we are in dev -- make changes here.  To merge back, first test what it will 
 - merging any changes to Master since we split off into dev
 - if results are good, then we merge dev into master
 - if master has not changed, first step will tell us that all is up-to-date:
-<br/>
-
 - $ git merge master
 <br/>
  
@@ -91,23 +89,22 @@ Notes:  help documentation indicated that -d let you test delete while -D made i
   - if you use this, next step is:  $ git merge  
 <br/>
  
-- $ git pull <remote> <branch>
+- $ git pull \<remote\> \<branch\>
   - fetches and merges, but conflicts will need resolution
   - example:  - $ git pull origin master
 <br/>
 
-- $ git push <remote> <branch>
+- $ git push \<remote\> \<branch\>
   - pushes changes back up to server specifying repository and branch
   - example:  - $ git push origin master
 <br/>
   
-- $ git branch <branch-to-be-created> <source of content for this branch - on remote server>
+- $ git branch \<branch-to-be-created\> \<source of content for this branch - on remote server\>
   - choices for second argument include:  HEAD, a specific commit, or a branch from the remote repo like "origin/master"
   - example:  $ git branch devWork origin/devWork
     - this example pulls down a copy of the devWork branch from our repo into a new local branch of the same name-of-branch  
     - use git branch -r to get exact name/syntax of branch to pull down
   - to create and check out a local copy of a branch on the remote server
-    - git branch -b <branch-to-create> <branch-on-rempte-server>  
+    - git branch -b \<branch-to-create\> \<branch-on-remote-server\>  
 <br/>
-Note:  You cannot check out a remote branch, you can only copy it down locally to work on it and then push back up.	
-	
+Note:  You cannot check out a remote branch, you can only copy it down locally to work on it and then push back up.	 

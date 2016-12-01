@@ -81,7 +81,7 @@ Other commands:
 <br/>
 
 - Example of deleting a branch:
-  - old way:  $ git push origin :<name-of-branch-to-delete>
+  - old way:  $ git push origin :\<name-of-branch-to-delete\>
     - the : tells it to delete the branch from the remote called "origin"
 	- why this works:
 	  - standard push = $ git push origin name-of-branch-to-delete
@@ -90,8 +90,9 @@ Other commands:
 		- after colon:  remote branch we want to push to
 		- shorthand works because if only one, git assumes names are the same
 		- put in colon and leave first one blank and git is being told to push nothing up to the remote branch
-  - new way:  $ git push origin --delete <name-of-branch-to-delete>  
+  - new way:  $ git push origin --delete \<name-of-branch-to-delete\>  
 <br/>
+
 ### .gitignore and related setup and debugging help
 
 - to exclude files across all repositories without writing it to .gitignore (for all projects)
