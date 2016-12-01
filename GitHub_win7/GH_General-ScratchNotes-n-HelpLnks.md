@@ -93,6 +93,7 @@ about Git and are often willing to help.
 ## Interesting Projects on GitHub (other users)
 
 https://github.com/geekcomputers
+https://github.com/AileenNielsen/TimeSeriesAnalysisWithPython
 
 Find other interesting projects and code-bases:<br/>
 https://github.com/explore/

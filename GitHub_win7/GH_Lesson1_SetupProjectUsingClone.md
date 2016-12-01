@@ -37,6 +37,13 @@ and finally, editing Readme.md on Git and synching that update to your local cop
   - this will be the project folder locally after you clone it
   - you can test with "dir" before changing directory
   
+- $ git clone <URL to clone from project on Github> <folder to clone into>
+  - variant that clones the repository on Git to a folder name of our choosing locally
+  - example: git clone "https://github.com/TheMitchWorksPro/DevEnv-SetUp-Help.git" DevEnv-Setup-Help_v2
+  - use case:  
+    - folder name (or entire copy of the project) already exists locally but it is desirable to clone project into a different folder 
+	- this approach could allow experimentation with two versions of same project at same time
+  
 <br/><br/>Your project should now be ready to use.  On bash, you should see "(master)" at end of the path you are in.
 
 ## Edit Some Files Locally.
@@ -116,12 +123,17 @@ in the next lesson.
 
 <br/>  
 - Make a change back in the online project (Git remore repo at internet URL):
-  - before you change anything locally you need to pull and merge into the local project
-  - simply use this command and it should solve the problem:
+  - before you change anything locally you need to fetch and merge into the local project
+  - git pull = git fetch + git merge:
     - $ git pull
     - if no changes exist to pull - you will get an up-to-date message
-    - note above syntax assumes simple project setup (master branch which is created by default)	
+    - note above syntax assumes simple project setup (master branch which is created by default)
+    - when collaborating or when things are not so simple, it may be beneficial to:
+      - git fetch
+      - then git diff (between remote and local branch) to see what's different
+      - then git merge	  
 
 <br/>
 - $ git log 
   - can show all commits that have taken place
+  - more git log syntax is provided in the "GetInfo_Commands" .md topic

@@ -80,6 +80,8 @@ Then: you should be able to use same add, commit, push commands as in lesson 1 o
 <br/>
 
 - $ git remote add origin https://github.com/TheMitchWorksPro/TestProject.git
+  - added the wrong remote?  $ git remote rm <remore alias>
+    - example:  $ git remote rm origin
 <br/>
 
 **Note:**  Before this step, the above repository must be created on GIT if it is not there already.
@@ -88,6 +90,8 @@ Then: you should be able to use same add, commit, push commands as in lesson 1 o
 <br/>
 
 - $ git push -u origin master
+  - u = sets the push up to be tracked
+  - note that during cloning this is done automatically but for this process it needs to be set up 
 <br/>
 
 Subsequent pushes can use:  - $ git push
@@ -101,11 +105,12 @@ Subsequent pushes can use:  - $ git push
 <br/>
 
 Idea to be tested:
-1 Kill .git folder using:  rm -rf .git
-2 Perform any final changes that will become the new live content
-3 Delete project on GIT
-4 Re-create project (do not create Readme.md, or other starter fils project already has)
-5 Follow initialization steps and commit the local project back to new online repo as intial commit
+
+1. Kill .git folder using:  rm -rf .git
+2. Perform any final changes that will become the new live content
+3. Delete project on GIT
+4. Re-create project (do not create Readme.md, or other starter fils project already has)
+5. Follow initialization steps and commit the local project back to new online repo as intial commit
 
 
   

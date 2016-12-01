@@ -19,13 +19,14 @@
   - with -v:  lists full URL for Fetch and Push operations
 <br/>
 
-- $ git branch -a
-  - lists branches for our working folder project (all branches local and remote)
-<br/>
-
 - $ git branch
   - on a local unbranched project, this would return "master"
-  - might be just local branches, need to test for difference w/ git branch -a 
+  - this provides list of local branches in working folder 
+- $ git branch -r
+  - provides just remote branches
+- $ git branch -a
+  - lists all branches, both local and remote
+  
 <br/>
   
 - $ git status
@@ -44,6 +45,15 @@
   - since / until - use these to carve out by date what entries you wish to see
   - author is a pattern match getting just log entries with "mitch" in the name (for example)
   - grep stands for:  Global Regular ExPression search; simple example:  grep="bug" (all entries with text "bug" in them for bug fixes)
+<br/>
+
+- $ git log --oneline -5 
+- $ git log --oneline origin/master 
+- $ git diff origin/master..master 
+  - first variation: displays all log entries as single line with just the first commit message line showing
+    - optional last argument "-#" is number of lines to display; if left all, whole log is returned
+  - second variation:  adding "oring/master" shows the local copy of the remote log (which will not have changes made locally so far yet)
+  - git diff ... compares the local and remote branches showing what is different
 <br/>
   
 - $ git --version
