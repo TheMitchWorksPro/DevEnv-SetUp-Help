@@ -1,11 +1,12 @@
 # Other Useful Commands on GIT
 This topic organizes misc. useful commands into these sections:
-1 LINUX and Git Syntx
-2 Common and Useful Git Commands
-3 Commands used in Debugging of Common Problems
+
+1. LINUX and Git Syntx
+2. Common and Useful Git Commands
+3. Commands used in Debugging of Common Problems
   1 .gitignore and related setup and debugging help
-4 Basic Help Commands
-5 Dangerous Commands
+4. Basic Help Commands
+5. Dangerous Commands
 
 ## LINUX and Git Syntx
 
