@@ -17,4 +17,8 @@ https://help.github.com/articles/error-permission-denied-publickey/
 * useful help topic on permission error
 <br/>
 
+Related:
+- keystore for Mac:  https://help.github.com/articles/set-up-git#password-caching
+- ssh alternative (may need this for Windows): https://help.github.com/articles/generating-an-ssh-key/
+
 Content to be developed in the future ...

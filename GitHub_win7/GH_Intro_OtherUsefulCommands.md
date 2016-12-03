@@ -1,12 +1,14 @@
 # Other Useful Commands on GIT
+
 This topic organizes misc. useful commands into these sections:
 
 1. LINUX and Git Syntx
 2. Common and Useful Git Commands
 3. Commands used in Debugging of Common Problems
   1 .gitignore and related setup and debugging help
-4. Basic Help Commands
-5. Dangerous Commands
+4. Stashing Changes (to Commit Later) and Accessing What is Stashed - Used to Avoide Merge Conflicts
+5. Basic Help Commands
+6. Dangerous Commands
 
 ## LINUX and Git Syntx
 
@@ -35,10 +37,10 @@ For more help using LINUX commands on Git Bash - this command reference can help
 - $ cd ~
   - goes to user directory
   
-- $ touch <file>
+- $ touch \<file\>
   - creates a file
   
-- $ cat <file>
+- $ cat \<file\>
   - views contents of a text file
 <br/>
 
@@ -123,14 +125,61 @@ Other commands:
   - basic regular expression support: * ?[aeiou][0-9]
   - negate wild-card expressions using "!"
     - *.php
-	- !myFileToInclude.php
+	- !myFileToInclude.php  
+
+## Stashing Changes (to Commit Later) and Accessing What is Stashed - Used to Avoide Merge Conflicts
 	
+- $ git stash save "my message to store with my stashed changes"
+  - stashes all changes without committing them for future
+  - system may tell you to do this when you switch branches if there is a conflict between branches
+  - theoretically, stash your changes, switch branches, commit later
+  - when run:  does a hard reset so that our conflicting changes are stashed and we now match the repo to move forward
+  - has options to look up in helpfile for untracked files otherwise, default deals with tracked files only
+    - if you added new files, deleted files, or renamed files, may need these options  
+
+- $ git stash list
+  - provide list of changes in the stash (showing the descriptions we saved them with)
+  - stash presents each item with identifiers of form:  stash@{0}, stash@{1}, etc.
+  - stash available from any branch and lists changes with info on what branch the change occurred on
+  - you do not have to switch branches to use the stash - just reference right element on the stash  
+
+- $ git stash show @stash{0}
+  - this would show us the first element on the stash with "diff stats summary" for it
+  - more detail, add -p option to show "as patch" (like -p option on log):
+    - $ git stash show -p @stash{0}
+	- shows actual edits (full diff)  
+
+- $ git stash pop
+- $ git stash apply
+  - default grabs stash@{0}
+  - normal usage (examples):
+    - $ git stash pop stash@{1}
+	- $ git stash apply stash@{4}
+  - attempts to merge in changes from the stash
+  - will merge them in regardless of branch we are on (do not have to merge back to original branch)
+  - git pop versus git apply:
+    - pop = pops it off the statsh queue (removing it from stash) and adds to working directory
+	- apply = applies it to working directory but leaves a copy in the stash
+	  - use case for apply:  apply to current branch, switch to another branch and apply there, and to another branch to apply there ...
+	  - use case pop:  want to apply it to current branch just the one time to simply commit it back from current branch
+	- if no conflicts, changes merge into current working directory  
+
+- $ git stash drop stash@{0}
+  - removes an item from the stash
+  - use cases:  
+    - no longer need change (do not intend to do it after all)
+	- change applied multiple times to different branches, now we are done with it and want it off the stash  
+
+- $ git stash clear
+  - dangerous command:  permanently whipes all changes in the stash
+  - use case:  don't need anything on the stash and do not want to delete them one by one   
+	  
 ----
 ## Basic Help Commands
 
 Try all of these for different help pages:
 - $ git help
-- $ git help <command>
+- $ git help \<command\>
   - Example:  - $ git help fetch
 - $ git help -all
 - $ git help -g
@@ -144,7 +193,3 @@ Try all of these for different help pages:
 - $ git clean -n 
   - test run:  shows what will / will not be removed if we run for real
 <br/>
-
-
-  
-

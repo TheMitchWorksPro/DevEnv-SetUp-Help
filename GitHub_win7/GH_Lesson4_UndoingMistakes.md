@@ -69,7 +69,7 @@ Useful informational command:  what does head point to?
   - once reset is performed, you cannot find the items in the log that you are "re-winding" over
 <br/>
 
-- $ git reset --soft <SHA ID for commit to reset back to>
+- $ git reset --soft \<SHA ID for commit to reset back to\>
   - Example:  $ git reset --soft 6afab5e706a5327ca41336da1946759677eedb9f
   - What this does:  
     - Head pointer moved to new location
@@ -84,7 +84,7 @@ Useful informational command:  what does head point to?
   - once reset is performed, you cannot find the items in the log that you are "re-winding" over
 <br/>
 
-- $ git reset --mixed <SHA ID for commit to reset back to>
+- $ git reset --mixed \<SHA ID for commit to reset back to\>
   - Example:  $ git reset --mixed 6afab5e706a5327ca41336da1946759677eedb9f
   - What this does:  
     - Head pointer moved to new location
@@ -101,7 +101,7 @@ Useful informational command:  what does head point to?
   - once reset is performed, you cannot find the items in the log that you are "re-winding" over
 <br/>
 
-- $ git reset --hard <SHA ID for commit to reset back to>
+- $ git reset --hard \<SHA ID for commit to reset back to\>
   - Example:  $ git reset --hard 6afab5e706a5327ca41336da1946759677eedb9f
   - What this does:  
     - Head pointer moved to new location

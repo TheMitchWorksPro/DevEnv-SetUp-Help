@@ -82,7 +82,8 @@ in the next lesson.
     - git reset
 	  - uncommits everything so nothing is staged to be pushed
 	  - options can tell what to reset (if not looking to reset all)
-	  - typical reset of just one file:  $ git reset HEAD <filename>
+	  - typical reset of just one file:  
+	    - $ git reset HEAD \<filename\>
 
 ### Combining the add and commit steps in one command:
 
@@ -106,12 +107,12 @@ in the next lesson.
   - then commit and push just like an add command to finalize the changed
 
 <br/>
-- $ git rm <file-name>
+- $ git rm \<file-name\>
   - works like git add but removes file and updates the staging index for the file
   - this remove deletes it fully (does not leave one in recycle bin)
 
 <br/>
-- $ git mv <file> <renamed file>
+- $ git mv \<file\> \<renamed file\>
   - move command can rename files and record in index
   - use paths in syntax to move the file from source to target
 

@@ -22,8 +22,12 @@ In this file:
 	- Future Research
 	  - has links relating to useful topics many of which do not have command lists in this file.
 	  - as topics get written, they will form new files in this project rather than being edited here.
+- Additional Command Lists and Links From Creating This Content Project
+  - has command lists from final wrap up summary slides
+  - has misc. links to pages that were consulted during writing of content of this project
+    - these are random web pages that were open during research
 
-**----**
+----
 
 # Tools, Tutorials, and General Help Information
 
@@ -42,12 +46,26 @@ Note:  Git integrates with "Clear Case" and "Subversion" (mentioned in intro tra
   - More by same author:
      + https://www.youtube.com/watch?v=_vEPmy31XDE
        ++ 20 minute overview of history and how it works:  no demos of actually working in Git
+ 
+  - "Programmer" on - best tutorials found - full set as of this writing has 1 to 14:
+     + https://www.youtube.com/channel/UCFCNa0T6TZrz9jr4eAcn3iQ/playlists 
+       ++ playlist for all of them  
   
      + https://www.youtube.com/watch?v=iIjl4mj4AMc#t=899.097549
        ++ Install Git on a Macintosh inclusing package managers for different OS's, etc. 
   
      + https://www.youtube.com/watch?v=vBLjB7PZoK0#t=3.375194
        ++ Undoing changes in GIT (30 min)
+	   
+	 + https://www.youtube.com/watch?v=yXg8Jm_BwPU
+	   + explains "tree-ish" used in Git documentation
+	   + is "Git Tutorial for Beginners 9 Navigating the Tree" - with many useful commands to navigate the tree
+	   + content incorporated as section of "Get Info" commands (intro topic)
+	  
+	 + https://www.youtube.com/watch?v=gKsVC3pD7YM
+	   + explain stashing changes to "commit" in the future
+	   + Viewed and incorporated basic commands into topic on other useful commands --> debugging section 
+	   
 <br/>  
 - git-scm.com/downloads
   - to download Git Desktop<br/>
@@ -72,9 +90,9 @@ Getting Help:<br/>
 If you ever need help while using Git, there are three ways to get the manual page (manpage) 
 help for any of the Git commands:
 
-- $ git help <verb>
-- $ git <verb> --help
-- $ man git-<verb>
+- $ git help \<verb\>
+- $ git \<verb\> --help
+- $ man git-\<verb\>
   - this command did not work on my Windows 7 installation (using Git Bash)
 
 For example, you can get the manpage help for the config command by running
@@ -162,7 +180,7 @@ $ git pull origin master
 - $ git add -A
   - adds all to staging area (not committed yet)
 
-- $ git reset HEAD <filename>
+- $ git reset HEAD \<filename\>
   - removes file from staging so it won't be committed
 
 - $ git reset
@@ -250,4 +268,80 @@ during the early stages of the Git testing and experimentation behind this proje
 
 - Git alias commands and command writing for bash:
   - https://lukas.zapletalovi.com/2012/07/my-git-aliases-again.html
+  
+- The Science Behind Git (training video)
+  - https://www.youtube.com/watch?v=aFBMd0W6pEM  
 
+- Website companies advertising on Git Videos:
+  - MoPro
+  - Wix
+  
+## Additional Command Lists and Links From Creating This Content Project
+
+There may be overlap between some of the links in this section and previous "future research section."  This section added to
+these scratch notes near the end of creation of the first complete version of this project.
+
+### Command Lists
+Taken from **Git Tutorial for Beginners 13 Remotes** - these lists of commands were presented on powerpoints about collaborating with others.
+
+#### My Work
+
+1. $ git checkout master 
+2. $ git fetch
+3. $ git merge origin/master
+4. $ git checkout -b feedback_form
+  - creates new branch and switches to the branch
+5. $ git add feedback.html
+6. $ git commit -m 'added customer feedback form (html file)'
+7. $ git fetch
+  - if fetch confirms no changes, then we don't need to merge from remote
+  - when using fetch, if changes are found, they need to be merged in before continuing
+8. $ git push -u origin master
+
+#### Collaborator's Work
+
+1. $ git checkout master 
+1. $ git fetch
+6. $ git merge origin/master
+4. $ git checkout -b feedback_form origin/feedback_form
+   - copies origin/feedback_form from master to a local feedback_form and checks it out
+2. $ git log
+3. $ git show 84b6adf0
+  - shows specific entry in log w/ all info and differences (before/after) on changes
+
+
+#### My Work II (Updating From Collaborator's Changes) 
+
+1. $ git fetch
+  - see previous section's notes on fetch 
+  - in this case:  fetch picks up changes so we can compare them to our local before merging
+2. $ git log -p feedback_form..origin/feedback_form
+  - p = patch ... this syntax provides log entries showing feedback_form on my machine up through origin/feedback_form on the copy of master
+  - p = patch = "shows differences in what's in the log"
+3. $ git merge origin/feedback_form
+  - gets new branch for collaborator to work on
+4. $ git checkout master 
+5. $ git fetch
+6. $ git merge origin/master
+7. $ git merge feedback_form
+8. $ git push  
+
+Note:  to add collaborators on Github:
+- Admin -> Collaborators
+- start typing username and if in system, it will auto-complete
+
+### Links
+
+1.  [Github - Adding Images (to wikis and in general)](https://help.github.com/articles/adding-images-to-wikis/)
+2.  [Github - Basics:  Working with Remotes](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes) 
+3.  [Github - Configuring Git for Git Desktop (includes: hiding your email)](https://help.github.com/desktop/guides/getting-started/configuring-git-for-github-desktop/)
+4.  [Github - sample command page:  git init](https://git-scm.com/docs/git-init)
+5.  [Git Tutorial for Beginners 13 - 55 min in:  fetching and collaborating w/ others](https://www.youtube.com/watch?v=k-wcAAN3Wvw&spfreload=1#t=10.392051)
+
+# Tools To Use with Git and Hosting Options
+
+- [Git Web - Requires you to set up own web server to view Git projects as website](https://git.wiki.kernel.org/index.php/Gitweb)
+- [Git Wiki: list of interfaces and FrontEnd Tools for Git](https://git.wiki.kernel.org/index.php/InterfacesFrontendsAndTools)
+- Git Hosting and Self Hosting Options:  Youtube: Git Tutorial for Beginners 14
+  - Link to the tutorial:  https://www.youtube.com/watch?v=k-wcAAN3Wvw&spfreload=1#t=10.392051
+  - Got to position 16:25 or so (little earlier for all hosting options, 16:25 for self-hosting)

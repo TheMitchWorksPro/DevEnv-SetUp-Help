@@ -44,7 +44,7 @@ projects.  Note:  LINUX commands and bash syntax apply as in earlier lessons.
   - if using paths to a file, use "/" as in:  myfolder/myfile.txt
 <br/>
   
-- $ git remote add origin <url to remote project>
+- $ git remote add origin \<url to remote project\>
   - add local project to remote repository (at URL provided)
 <br/>
   
@@ -80,7 +80,8 @@ Then: you should be able to use same add, commit, push commands as in lesson 1 o
 <br/>
 
 - $ git remote add origin https://github.com/TheMitchWorksPro/TestProject.git
-  - added the wrong remote?  $ git remote rm <remore alias>
+  - added the wrong remote?  remove it with:
+    - $ git remote rm \<remore alias\>
     - example:  $ git remote rm origin
 <br/>
 
@@ -97,6 +98,7 @@ Then: you should be able to use same add, commit, push commands as in lesson 1 o
 Subsequent pushes can use:  - $ git push
 
 ----
+
 ## Re-Initializing a Project to kill its tracking history
 - use case:  tracking takes space on hard drive
 - this process should allow a reset as if project were new
