@@ -136,12 +136,13 @@ tree-ish syntax that can be used with many of the commands below to establish st
 <br/>
 
 - $ git diff 
-  - what's different between remote repo and local repo
-  - if changes big you see a :
-  - windows: can use arrow keys to scroll down in difference log
-  - when you get to end, use "q" to quit
-  - expected commands:  f and b for forward and backwards through each page of content and q to quit
-  - hitting other keys can have strange and unexpected behaviors on the screen but you can still use "q" to get out  
+  - shows what's different between remote repo and local repo
+  - if cursor becomes a :
+    - windows: can use arrow keys to scroll down in difference log (page by page)
+    - when you get to end, use "q" to quit
+    - expected commands:  f and b for forward and backwards through each page of content and q to quit
+	- or space bar moves forward page by page until you use q to quit
+    - hitting other keys can have strange and unexpected behaviors on the screen but you can still use "q" to get out  
 <br/>
 
 - $ git diff --staged

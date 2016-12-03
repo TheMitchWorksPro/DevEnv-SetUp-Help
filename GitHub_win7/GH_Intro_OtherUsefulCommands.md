@@ -127,7 +127,7 @@ Other commands:
     - *.php
 	- !myFileToInclude.php  
 
-## Stashing Changes (to Commit Later) and Accessing What is Stashed - Used to Avoide Merge Conflicts
+## Stashing Changes (to Commit Later) and Accessing What is Stashed - Used to Avoid Merge Conflicts
 	
 - $ git stash save "my message to store with my stashed changes"
   - stashes all changes without committing them for future

@@ -101,6 +101,8 @@ Subsequent pushes can use:  - $ git push
 
 ## Re-Initializing a Project to kill its tracking history
 - use case:  tracking takes space on hard drive
+  - at some point it may be clear that full tracking history is no longer needed
+  - it is then desirable to get rid of it and recover the space before adding more new commits
 - this process should allow a reset as if project were new
 - once done, all previous commit history is lost and only current and go-forward remains
 - **warning!** If successful, this will make it impossible to roll back the project since earlier commits are whiped out.
