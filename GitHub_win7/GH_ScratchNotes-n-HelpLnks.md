@@ -64,8 +64,15 @@ Note:  Git integrates with "Clear Case" and "Subversion" (mentioned in intro tra
 	  
 	 + https://www.youtube.com/watch?v=gKsVC3pD7YM
 	   + explain stashing changes to "commit" in the future
-	   + Viewed and incorporated basic commands into topic on other useful commands --> debugging section 
-	   
+	   + Viewed and incorporated basic commands into topic on other useful commands --> debugging section <br/>
+	 
+	 Updates:  links above may or may not work.  They were on YouTube originally but have since been challenged for copyright reasons.<br/>
+	 The best videos I watched are accessible through a subscription to Lynda.com at this URL:<br/>
+	 https://www.lynda.com/Git-tutorials/Git-Essential-Training/100222-2.html<br/>
+	 
+	 A few are available as free preview<br/>
+	 Lynda.com may also be free if you purchase LinkedIn Learning on LinkedIn<br/>
+	 
 <br/>  
 - git-scm.com/downloads
   - to download Git Desktop<br/>
