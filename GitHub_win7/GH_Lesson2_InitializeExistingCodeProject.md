@@ -86,7 +86,10 @@ Then: you should be able to use same add, commit, push commands as in lesson 1 o
 <br/>
 
 **Note:**  Before this step, the above repository must be created on GIT if it is not there already.
-- If your local project already has README.MD, .gitignore, or License files - do not create them in the project on GIT
+- If your local project already has README.MD, .gitignore, or License files - you do not need them in the project on GIT
+- If you create them on Git, then your project and git will be out of synch in a way that is tricky to resolve
+- If you need these files, create them in another project, download them, and add them to your project folder
+- Then they will be part of the push to the empty project you create on GIT
 - syntax which follows is for first push only ...
 <br/>
 
