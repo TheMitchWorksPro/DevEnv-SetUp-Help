@@ -10,6 +10,9 @@ This topic organizes misc. useful commands into these sections:
 5. Basic Help Commands
 6. Dangerous Commands
 
+Other resources to consult:
+- ["Most Useful Git Commands" on orga.cat](https://orga.cat/posts/most-useful-git-commands)
+
 ## LINUX and Git Syntx
 
 Useful LINUX syntax and Git / Bash Commands that can help with general usage
@@ -127,6 +130,15 @@ Other commands:
     - *.php
 	- !myFileToInclude.php  
 
+### .gitattributes and controlling the project language
+
+These topics relate to using `.gitattributes` to provide some measure of input to the automated
+git processes that determine what language(s) are in a project:
+
+- http://stackoverflow.com/questions/13597892/how-to-change-the-language-of-a-repository-on-github
+- http://stackoverflow.com/questions/34713765/github-changes-repository-to-wrong-language/34715182#34715182
+
+	
 ## Stashing Changes (to Commit Later) and Accessing What is Stashed - Used to Avoid Merge Conflicts
 	
 - $ git stash save "my message to store with my stashed changes"
