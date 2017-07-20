@@ -2,7 +2,11 @@
 # Undoing Stuff on Git - Fixing Mistakes
 <br/>
 
-Source video: https://www.youtube.com/watch?v=vBLjB7PZoK0#t=3.375194
+Sources:
+
+ - https://www.youtube.com/watch?v=vBLjB7PZoK0#t=3.375194
+ - [Setting local Repo to Match Remote Repo](https://stackoverflow.com/questions/1628088/reset-local-repository-branch-to-be-just-like-remote-repository-head)
+   - [Summary of topic in this document](#resetWalkThrough)
 
 ----
 Notes taken from video - not all of these commands have been tested yet.
@@ -117,6 +121,25 @@ Useful informational command:  what does head point to?
 		  - provided not garbage collected, can reset again with SHA-IDs from our copy of the lost history
 		  - this can effectively get back the "working content we lost" provided that content was committed 
 	
+<a id="resetWalkThrough" name="resetWalkThrough"></a>
 
+## Resetting Local Repo To Match Remote Repo
+
+This topic assumes you know all changes are wrong or unnecessary and you just want to make your local files exactly match the remote repository.  
+
+Here's what commands to use:
+
+  1. git fetch origin
+  2. git reset --hard origin/master
+  3. git clean -n -f
+  4. git clean -f
+
+How to use these commands:
+
+Assumptions:  you did not rename the main branch so your remote repo is "origin/master".
+
+  1. run first two commands
+  2. command 3 is a check step, run it ahead of step 4 to see what will be removed (if any files in your local repo are untracked and not on the remote repository).
+  3. if you are comfortable with what the 3rd command tells you will be removed, then run 4th command.  Otherwise, you can choose not to run the 4th command, or copy the files outside your repo to preserve them and then run 4th command (which will delete them to make your local repo match the remote one) 
 
 
