@@ -5,12 +5,9 @@ Though initially, this content was "my notes for me", they address gaps I encoun
 from resources available online that I felt might be helpful to others.  This content is not comprehensive, and is presented as is. 
 Testing of proceses is done with the equipment described with each folder only.  <br/>
 
-Issues reported may or may not be addressed.  Requests to edit and make files better can be sent to:   
-UnderKlover@gmail.com.  
-
 Want to add edit files or improve this content?  Collaborations are welcome.  
 
-This is a work in progress first added to GitHub on:  11/13/2016.
+This is a work in progress first added to GitHub on:  11/13/2016 and added/edited somewhat sporadically since then.
 
 #### Subproject folders:
 - [Anaconda_win7](Anaconda_win7): &nbsp;&nbsp;&nbsp;&nbsp;files from setup of an anaconda distribution of Python 2.7/3.5 on a Win7 Laptop
